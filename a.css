@@ -1,6 +1,6 @@
 body {
-  background: black;
-  color: #ffffff;
+  background: #efefef;
+  
   margin: 0;
 }
 
@@ -10,48 +10,137 @@ body {
   clear: both;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+hr{
+  height: 0;
+  border:none;
+  border-top: 1px solid #dedede;
+}
+
+.banner{
+  height:515px;
+  background-image:url(./img/rs-cover-2-2-1-1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.banner .mask{
+  height: 515px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card{
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffff;
+}
+
+.topNavBar{
+  padding: 20px 0 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.topNavBar-inner{
+padding:0 16px 0 16px;
+}
+
+.card .welcome{
+  display: inline-block;
+  color: white;
+  background-color: #e6686a;
+  /* width: 70px; */
+  /* height:29px; */
+  /* line-height: 29px; */
+  /* text-align: center; */
+  padding:4px 16px;
+  line-height: 22px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.card .welcome .triangle{
+  display: block;
+border:10px solid transparent;
+width: 0px;
+border-left-color: #e6686a;
+border-top-width: 0px;
+position: absolute;
+top: 100%;
+left: 6px;
+}
+
+.card .Picture{
+  float: left;
+  
+}
+
+.card .Text{
+  float: left;
+  margin-left: 65px;
+  width: 470px;
+}
+
+.card .Text h1{
+  margin-top: 18px;
+}
+
+.card .Text hr{
+  margin: 20px 0;
+}
+.card .PictureAndText{
+  padding:50px;
+}
+
+.topNavBar  nav {
+padding-top: 7px;
+padding-bottom: 1px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
 }
 
-.topNavBar > nav > ul > li {
+.topNavBar  nav > ul > li {
   float: left;
   margin-left: 17px;
   margin-right: 17px;
 }
 
-.topNavBar > .logo {
+.topNavBar .logo {
   font-size: 24px;
   font-family: "Arial Black";
   list-style: none;
   padding-top: 3px;
   padding-bottom: 4px;
 }
-.topNavBar > .logo > .rs {
+.topNavBar .logo .rs {
   color: #e6686a;
   margin-right: 4px;
 }
 
-.topNavBar > .logo > .card {
+.topNavBar .logo .card {
   color: #9a9da2;
+  background-color: transparent;
 }
 
-.topNavBar > nav > ul {
+.topNavBar  nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.topNavBar{
-    padding: 20px 16px 20px 16px;
-}
-.topNavBar > nav {
-  padding-top: 7px;
-  padding-bottom: 1px;
-}
-.topNavBar > nav > ul > li > a {
-  color: rgba(255, 255, 255, 0.7);
+
+.topNavBar  nav > ul > li > a {
+  color: #b7b7b7;
   font-size: 12px;
   font-weight: bold;
   text-decoration: none;
@@ -62,6 +151,49 @@ a {
   display: block;
 }
 
-.topNavBar > nav > ul > li > a:hover {
+.topNavBar  nav > ul > li > a:hover {
   border-bottom-color: #dc6465;
 }
+
+.card dl dt,
+.card dl dd{
+  float: left;
+  padding: 5px 0;
+}
+
+.card dl dt{
+  width: 30%;
+  font-weight: bold;
+}
+
+.card dl dd{
+  width: 70%;
+  color: #9da0a7
+}
+
+.card >footer{
+  background-color: #e6686a;
+  text-align: center;
+}
+
+.card >footer >a{
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  padding: 5px 0;
+  line-height: 30px;
+  margin: 16px;
+}
+
+.card >footer >a:hover{
+  background-color: #cf5d5f;
+}
+
+.card svg{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  /* margin:0 16px; */
+  vertical-align: top;
+}
+
